@@ -5,7 +5,7 @@ public class NewBehaviourScript : MonoBehaviour {
 
     IEnumerator CoFunction()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         Destroy(gameObject);
     }
 	// Use this for initialization
@@ -19,3 +19,4 @@ public class NewBehaviourScript : MonoBehaviour {
 	
 	}
 }
+
