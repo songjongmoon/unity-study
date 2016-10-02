@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewBehaviourScript1 : MonoBehaviour
-{
+public class wallsprite1script : MonoBehaviour
+
+
+	{
 
 
     float random = Random.Range(-3f, 3f);
@@ -13,12 +15,12 @@ public class NewBehaviourScript1 : MonoBehaviour
 
         yield return new WaitForSeconds(2);
         Instantiate(gameObject);
-       
+
         transform.Translate(new Vector3(0, random, 0));
-        
+
 
     }
-   
+
 
 
     // Use this for initialization
@@ -29,12 +31,12 @@ public class NewBehaviourScript1 : MonoBehaviour
 
 
     }
-   
+
 
     // Update is called once per frame
     void Update()
     {
 
-       
+
     }
 }
