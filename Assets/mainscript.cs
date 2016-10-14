@@ -3,8 +3,9 @@ using System.Collections;
 
 public class mainscript : MonoBehaviour
 {
+    
     public GameObject WallPrefab;
-    public float Speed = 1f; 
+     
     public float DestroyTime = 20f; 
     public float YIntervalRange = 2f;
 
@@ -26,23 +27,13 @@ public class mainscript : MonoBehaviour
  	 
  	void Update()
      { 
-         transform.Translate(Vector3.left* Time.deltaTime * Speed); 
- 	} 
+         transform.Translate(Vector3.left* Time.deltaTime * prefab.Instance.Speed); 
+ 	 } 
  
  
      IEnumerator DestroyRoutine()
      { 
-         yield return new WaitForSeconds(DestroyTime); 
- 
- 
-         
- 
- 
-         Destroy(gameObject); 
+         yield return new WaitForSeconds(DestroyTime);
+         Destroy(gameObject);
      }
-    
-
-
-
-
 }
